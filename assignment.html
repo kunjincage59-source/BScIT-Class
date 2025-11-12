@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Abroad Application Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f7fa;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        color: #003366;
+      }
+      form {
+        background: #fff;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 8px;
+        vertical-align: top;
+      }
+      label {
+        font-weight: bold;
+      }
+      input,
+      select,
+      textarea {
+        width: 95%;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      textarea {
+        resize: vertical;
+      }
+      .submit-btn {
+        text-align: center;
+        padding-top: 20px;
+      }
+      input[type="submit"] {
+        background-color: #0077cc;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #005fa3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Study Abroad Application Form</h1>
+    <form action="#" method="post">
+      <table>
+        <tr>
+          <td><label for="fname">First Name:</label></td>
+          <td><input type="text" id="fname" name="fname" required /></td>
+          <td><label for="mname">Middle Name:</label></td>
+          <td><input type="text" id="mname" name="mname" /></td>
+        </tr>
+        <tr>
+          <td><label for="lname">Last Name:</label></td>
+          <td><input type="text" id="lname" name="lname" required /></td>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required /></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Mobile Phone (with country code):</label></td>
+          <td colspan="3">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+1 234567890"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label>Gender:</label></td>
+          <td colspan="3">
+            <input type="radio" id="male" name="gender" value="Male" required />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other" />
+            <label for="other">Other</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Preferred Universities:</label></td>
+          <td colspan="3">
+            <input
+              type="text"
+              name="university1"
+              placeholder="University 1"
+              required
+            /><br /><br />
+            <input
+              type="text"
+              name="university2"
+              placeholder="University 2"
+              required
+            /><br /><br />
+            <input
+              type="text"
+              name="university3"
+              placeholder="University 3"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label>Languages Known:</label></td>
+          <td colspan="3">
+            <table border="1" width="100%" style="border-collapse: collapse">
+              <tr>
+                <th>Language</th>
+                <th>Understand</th>
+                <th>Speak</th>
+                <th>Write</th>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" name="lang1" placeholder="English" />
+                </td>
+                <td><input type="checkbox" name="lang1_understand" /></td>
+                <td><input type="checkbox" name="lang1_speak" /></td>
+                <td><input type="checkbox" name="lang1_write" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="lang2"
+                    placeholder="Other Language"
+                  />
+                </td>
+                <td><input type="checkbox" name="lang2_understand" /></td>
+                <td><input type="checkbox" name="lang2_speak" /></td>
+                <td><input type="checkbox" name="lang2_write" /></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="qualification">Last Highest Qualification:</label>
+          </td>
+          <td colspan="3">
+            <input
+              type="text"
+              id="qualification"
+              name="qualification"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="otherinfo">Any Other Information:</label></td>
+          <td colspan="3">
+            <textarea
+              id="otherinfo"
+              name="otherinfo"
+              rows="4"
+              placeholder="Write here..."
+            ></textarea>
+          </td>
+        </tr>
+      </table>
+      <div class="submit-btn">
+        <input type="submit" value="Submit Application" />
+      </div>
+    </form>
+  </body>
+</html>
