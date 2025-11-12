@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="basic.js"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: linear-gradient(to right, #00c6ff, #28d676);
+      }
+
+      div {
+        margin: 50px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        gap: 10px;
+      }
+
+      input {
+        padding: 10px;
+        width: 250px;
+        border-radius: 6px;
+        margin-left: 40px;
+        border: 3px solid rgb(145, 143, 143);
+        outline: none;
+      }
+
+      label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+      }
+
+      button {
+        width: 80px;
+        margin: 50px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 6px;
+        background-color: black;
+        color: white;
+        font-weight: 500;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+      }
+
+      button:hover {
+        background-color: rgb(56, 52, 52);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label> N1</label>
+      <input type="text" id="N1" placeholder="Enter first number" />
+      <br /><br />
+      <label> N2</label>
+      <input type="text" id="N2" placeholder="Enter second number" />
+      <br /><br />
+      Result
+      <input type="text" id="Result" placeholder="Resultts" /><br /><br />
+      <button onclick="calculate()">Calculate</button>
+    </div>
+
+    <script>
+      function calculate() {
+        var a = document.getElementById("N1").value;
+        var b = document.getElementById("N2").value;
+        var c = Number(a) + Number(b);
+        document.getElementById("Result").value = c;
+      }
+    </script>
+  </body>
+</html>
