@@ -1,0 +1,51 @@
+table {
+  background-color: rgb(187, 186, 186);
+}
+
+.EQ {
+  color: rgb(1, 1, 58);
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: rgb(130, 92, 167);
+}
+
+.labe {
+  padding-left: 19px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.zero {
+  color: rgb(255, 60, 0);
+  background-color: rgb(105, 148, 148);
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+.op {
+  background-color: rgb(130, 92, 165);
+}
+.ot {
+  background-color: rgb(52, 2, 99);
+  border-color: black;
+  color: wheat;
+  font-family: "Times New Roman", Times, serif;
+}
+
+button {
+  color: brown;
+  background-color: rgb(73, 173, 140);
+  border-radius: 6px;
+  font-style: italic;
+  border-color: rgb(114, 170, 170);
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 18px;
+  padding-top: 18px;
+}
+
+table {
+  height: 250px;
+  width: 250px;
+}
